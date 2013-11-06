@@ -187,12 +187,12 @@ document.getElementById('calci').innerHTML="0";
 
 <div id="confirm_mes" style="display:none;position:fixed;top:20%;margin:10%;border-radius:5px;box-shadow:0 0 0.5em gray;width:80%;height:40%px;background-color:black;z-index:9998">
 <p style="padding:0px 25px;color:white;font-family:calibri;font-size:22px;" >Etes-vous s&ucirc;r de ce choix ? </p>
-<div style="padding:10px;float:right;"><img style="border-radius:4px;box-shadow:0 0 0.5em gray;" onclick="$('#bgv').hide();$('#confirm_mes').hide();" src="images/non.png"/>
+<div style="padding:10px;float:right;"><img style="border-radius:4px;box-shadow:0 0 0.5em gray;" onclick="document.getElementById('confirm_mes').style.display='none';document.getElementById('bgv').style.display='none';" src="images/non.png"/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="border-radius:4px;box-shadow:0 0 0.5em gray;" onclick="oui();" src="images/oui.png"/></div>
 </div>
 <div onclick="('#bgv').hide();" id="bgv" style="display:none;position:fixed;background-color:black;left:0;top:0;width:100%;height:100%;opacity:0.7;z-index:9997"></div>
-<div id="valida" style="display:none;position:fixed;background-color:black;left:37%;top:40%;padding:15px;z-index:9998;border-radius:15px;box-shadow:0 0 0.8em black;"><img src="images/valid.png"><i>&nbsp;<span style="font-size:18px;color:white;font-family:calibri;position:relative;top:-15px;">Ajout&eacute; au panier</span></i></div>
-<div id="valida2" style="display:none;position:fixed;background-color:black;left:37%;top:40%;padding:15px;z-index:9998;border-radius:15px;box-shadow:0 0 0.8em black;"><img width="45px" src="images/er.png"><i>&nbsp;<span style="font-size:18px;color:white;font-family:calibri;position:relative;top:-15px;"> Selectionnez une table</span></i></div>
+<div id="valida" style="display:none;position:fixed;background-color:black;margin:10%;top:40%;padding:15px;z-index:9998;border-radius:15px;box-shadow:0 0 0.8em black;"><img src="images/valid.png"><i>&nbsp;<span style="font-size:18px;color:white;font-family:calibri;position:relative;top:-15px;">Ajout&eacute; au panier</span></i></div>
+<div id="valida2" style="display:none;position:fixed;background-color:black;left:10%;top:40%;padding:15px;z-index:9998;border-radius:15px;box-shadow:0 0 0.8em black;"><img width="45px" src="images/er.png"><i>&nbsp;<span style="font-size:18px;color:white;font-family:calibri;position:relative;top:-15px;"> Selectionnez une table</span></i></div>
 
 		<div style="padding:0px;margin:0px" data-role="page" data-theme="a">
 			<div id="cont2" data-position="fixed" data-role="header" style="padding:4px">
